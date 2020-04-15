@@ -1,54 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  {%load static %}
 <head>
-    <link href="{%static '/css/main.css' %}" rel="stylesheet" type="text/css"/>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <title>Work Experience</title>
-
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        {%load static %}
+        <link href="{%static '/css/main.css' %}" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/c6b133c167.js" crossorigin="anonymous"></script>
+        <title>Work</title>
 </head>
 <body>
-{%include "main/includes/nav.html" %}
+<section style="background-image: url({% static 'images/colorr.png' %})" >
+    {%include "main/includes/nav.html" %}
+{% block content %}
 
+   <div class="experience" style="background-image: url({% static 'images/3.jpg' %})">
 
+            <div class="exp-text">
 
-   {% block content %}
-<br>
+                    <h3>Work Experience</h3>
 
-         <div class="row">
-            <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h4>Reference</h4>
-                    <hr>
+                 <p>
+                     My experience spans out from different industries including but not limited to
+                     <b>Health Sector</b>,
+                     <b>Financial</b>,
+                     <b>Agriculture</b>
+                     & current <b> Credit Bureau & Information Services.</b>
+                 </p>
+                <p>From A Data Capture at Thornhil Clinic to being a Data auditor at
+                    <a href="https://ppecb.com/">PPECB.</a>
+
+                    </p>
+
                     <p>
-                        resemblance to sections 1.10.32–33 of
+                        I have worn different hats in all organization varying with size from working as a
+                        Software Developer at one of the leading credit bureau internationally <a href="https://www.experian.co.za/" target="_blank">
+                        Compuscan
+                    </a>
+                         and now known as
+                        <a href="https://www.experian.co.za/" target="_blank">
+                         Experian.
+                    </a>
+
                     </p>
-                      <p>
-                        resemblance to sections 1.10.32–33 of
+                <p>
+                     to working as a
+                        <b>Data Analyst & Software Engineer</b> at a start up
+                        <a href="https://akibadigital.com/" target="_blank">Akiba Digital.</a>
+                    I do believe my skills can have a positive impact in the organization and going forward.
+                </p>
+        </div>
+   </div>
+    <!------    Services    ---->
+    <div class="services">
+
+        <div class="box-container" >
+            <div class="card-deck">
+                <div class="card">
+                    <img src="{% static 'images/scrum.jpg' %}" height="230" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Scrum & Project Management</h5>
+                    <p class="card-text">Compuscan enrolled us in a Project Management course as an Intern.</p>
+                        <p>I believe practical the skills i have put me at a better understanding of both technical and business aspects of the development. </p>
+                    <p> Documenting work, breaking down tickets and spec requirements, this are some of the skills i acquired. </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{% static 'images/code.png' %}" height="230" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Software Development</h5>
+                    <p class="card-text"> Developing full-stack enterprise applications for AA, Absa and many companies.</p>
+                        <p>Working with RestApi using Node, Azure, Typescript and Vue.js for frontend, I learned a lot in about Software development cycle. documenting your work and working in an agile development</p>
+                    <a href="https://github.com/Tookliin" target="_blank" style="background-color: teal; color: white">  View My Work</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="{% static 'images/dash.jpg' %}" height="230" class="card-img-top" >
+                    <div class="card-body">
+                    <h5 class="card-title">Data Analysis</h5>
+                    <p class="card-text">From teaching myself Python SQL playing with kaggle data-sets extracting, reading cleaning data with Python Pandas & matplotlib.
                     </p>
+                        <p>To working with aws creating data visualization and dashboards, I must say i learned a lot with Akiba digital.</p>
+                    <a href="https://github.com/Tookliin" target="_blank" style="background-color: teal; color: white">  View My Work</a>
+                    </div>
                 </div>
             </div>
 
-             <div class="col-md-6">
-                <div class="card card-body h-100">
-                    <h4>Stack</h4>
-                    <hr>
-                    <p>
-                        resemblance to sections 1.10.32–33 of
-                    </p>
-                      <p>
-                        resemblance to sections 1.10.32–33 of
-                    </p>
+        </div>
+    </div>
 
 
-                </div>
-            </div>
-         </div>
+<!--------- Footer ------>
+{%include "main/includes/footer.html" %}
+{% endblock %}
+</section>
 
-        {% endblock %}
 </body>
 </html>
+
+
+
+
 
 
 
