@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        {%load static %}
+        <link href="{%static '/css/main.css' %}" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/c6b133c167.js" crossorigin="anonymous"></script>
+        <title>Home</title>
+</head>
+
+<body>
+{%include "main/includes/nav.html" %}
+{% block content %}
+    <section style="background-image: url({% static 'images/colorr.png' %})">
+        <!--All About Me-->
+        <div class="text-container">
+            <p></p>
+            <p style="color: #b17419">Hi, I am Macco Skuni</p>
+            <p style="color: #000000;">Software Developer, Data Analyst <br/>Project Management </p>
+        <a href="https://github.com/Tookliin" target="_blank" >
+            <button type="button" class="hire-btn" >My Work</button>
+        </a>
+
+
+
+        </div>
+    </section>
+<!------About Me-------->
+
+
+        <div class="about-container">
+            <img id="profile-pic" src="{% static 'images/main.jpg' %}">
+            <div class="about-text">
+               <h4>Ambitious General Creative</h4>
+                <p></p>
+                <p>Don't be fooled by a clean suit and my outdated glasses.
+                I kick <s><b>assets</b></s> in gaming, and a super cool wine tasting master. </p>
+                <p>I Always believe the algorithm and ability to solve problems never change even if the tools can change</p>
+
+                <a href="/about">
+              <button type="button" class="down-cv">READ MORE</button>
+                </a>
+            </div>
+        </div>
+
+
+
+    <!------    Services    ---->
+    <div class="services">
+
+          <div class="row">
+                <div class="col m6 offset-m6">
+                <span class="flow-text">
+                    Skills & Tools
+                </span>
+                 <p>
+                     <b></b>
+                 </p>
+
+      <div class="w3-light-grey">
+          <p class="w3-wide">Software Development</p>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 95%;">
+          95%
+        </div>
+      </div>
+
+      <div class="w3-light-grey">
+          <p class="w3-wide">Problem Solving| Technical</p>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 85%;">
+          90%
+        </div>
+      </div>
+
+      <div class="w3-light-grey">
+          <p class="w3-wide">Pytorch | Pandas | </p>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 80%;">
+          90%
+        </div>
+      </div>
+
+     <div class="w3-light-grey">
+          <p class="w3-wide">Python | Node | Javascript</p>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 80%;">
+          90%
+        </div>
+      </div>
+
+      <div class="w3-light-grey">
+          <p class="w3-wide">Database | API | Serveless</p>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 80%;">
+          80%
+        </div>
+      </div>
+
+        <div class="w3-light-grey">
+          <p class="w3-wide">Project M | Agile | Jira </p>
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width: 80%; height: 600%;">
+          70%
+        </div>
+      </div>
+
+
+                </div>
+
+                <div class="col m6 offset-m6" >
+                <span class="flow-text">
+                    Goals & Ambition
+                </span>
+                    <p>
+                     <b></b>
+                 </p >
+
+                    <p>As a diligent <b>Team Player</b> with a vigorous skill set from some of the best
+                   industry players in <b> IT to Credit Bureau</b>, I believe
+                   professional expertise & Team-work deliver utmost
+                   results on the
+                   organization’s growth and within the respective department.
+                   <br/>
+               </p>
+               <p> I believe that a combination of ambition, talent and lifelong learning is a
+                   critical fusion to an utmost in self-redefining, and staying relevant through the
+                   rapid changes of the <b>V.U.C.A</b> world and the Fourth Industrial revolution
+               </p>
+                       <p>  I have been sharpening and training my skills preparing to be
+                        challenged in <b>Creative thinking</b>,  and with hard work and years working with great team players I gained great
+                        <b>Conflict resolving</b> skills, Soft-skills, Team work, people's skills & leadership.
+                    </p>
+                        <hr/>
+                    <p> "Think, Design, Implement, Test, Monitor" this are my steps and take to problem solving.
+                        I believe in an organization that values creativity without fear of management and favoritism of individuals.
+                    </p>
+                </div>
+            </div>
+    </div>
+
+{%include "main/includes/footer.html" %}
+{% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+

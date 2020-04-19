@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        {%load static %}
+        <link href="{%static '/css/main.css' %}" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/c6b133c167.js" crossorigin="anonymous"></script>
+        <title>About</title>
+</head>
+<body>
+<section style="background-image: url({% static 'images/colorr.png' %})">
+    {%include "main/includes/nav.html" %}
+{% block content %}
+
+
+        <!--All About Me-->
+        <div class="experience" style="background-color: ">
+
+            <div class="about-text" style="color: black">
+                <h3>About Me</h3>
+                <p></p>
+
+                <p>
+                    I'm Makhosandile Patrick Skuni, Known as Macco.
+                </p>
+                 <p>
+                     Born in Bloemfontein, family of 5 and being my father's last born  I grew up spoilt with computer games and a freedom to explore my creativity.
+                 </p>
+                <span>
+                     My passion for creating and fascination of tech developed over playing games, felt the need to create something myself.
+                </span>
+
+                <span>
+
+                </span>
+
+                <p>
+                </p>
+        </div>
+        </div>
+
+    <!------    Services        ---->
+    <div class="services" >
+        <!------   Text  Services    ---->
+        <div class="services-text">
+                <p>Memorable Fun Moments</p>
+                <br/>
+                <p></p>
+                <p>As a Fan & lover of <b>Gaming, Anime & Star-wars.</b>
+                    I do enjoy outdoor Adventure, hiking, food, Wine and traveling.
+                    Hover on card to flip.
+                </p>
+
+        </div>
+                 <div class="box-container">
+                    <div class="boxx-1">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front" >
+
+                                </div>
+
+                                <div class="flip-card-back">
+                                    <span></span>
+                                <p class="heading">Out-going</p>
+                                <span></span>
+                                <p class="details">
+                                    I love meeting new people and going out, have a few glasses of wine and a cold beer and shoot pool.
+                                    <br/>
+
+                                    <hr/>
+                                    Lover of: Food, Baking, Wine & Gaming.
+
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="boxx-2" >
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                <img src="{% static 'images/hiking1.jpg' %}" style="width:315px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                  <span></span>
+                                <p class="heading">Adventure & Life</p>
+                                <span></span>
+                                <p class="details">
+                                    I am a very athletic and competitive person, I was introduced to hikking by my Best friend and cousin and i never looked back ever.
+                                    <br/>
+
+                                    <hr/>
+                                    Lions-head, Table mountain, Sun-set hiking Stellenbosch
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                      <div class="boxx-3" >
+
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                <img src="{% static 'images/eating.jpg' %}" style="width:315px;height:300px;">
+                                </div>
+                                <div class="flip-card-back">
+                                  <span></span>
+                                    <p class="heading">Family & Friendship</p>
+                                    <p class="details">
+                                        I am a mixture of <b>Rick & Morty</b> to me nothing compliments good food & laughter more than enjoying family time and friendship.
+                                    </p>
+                                    <hr/>
+                                    <p>
+                                        Our creativity is demanding but i never forget family time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+
+
+<!--------- Footer ------>
+{%include "main/includes/footer.html" %}
+{% endblock %}
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
