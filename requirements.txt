@@ -10,7 +10,7 @@ colorama==0.4.3
 colorlog==4.1.0
 cssselect==1.1.0
 distlib==0.3.0
-Django==3.0.5
+Django==3.1.6
 django-markwhat==1.6.2
 fake-useragent==0.1.11
 filelock==3.0.12
